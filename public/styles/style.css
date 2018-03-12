@@ -163,7 +163,8 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 .main-nav {
   margin-top: 80px; }
@@ -194,11 +195,10 @@ li a span:after {
   margin-left: 10px;
   border-top: 3px solid black; }
 
-.photo-content {
+section {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  margin-top: 40px; }
+  display: flex; }
 
 .icon {
   width: 50%;
@@ -212,7 +212,7 @@ li a span:after {
       -ms-flex-align: center;
           align-items: center; }
   .icon img {
-    width: 200px; }
+    height: 300px; }
 
 .main-image {
   width: 50%;
@@ -225,9 +225,7 @@ li a span:after {
   right: 300px; }
 
 footer {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  width: 100%;
   text-transform: uppercase; }
 
 .logo {
@@ -251,3 +249,52 @@ footer {
 
 .circle:hover {
   background: black; }
+
+.half {
+  width: 50%; }
+
+.headshot {
+  width: 400px; }
+
+h2 {
+  text-transform: uppercase; }
+
+.works {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.works-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 80px;
+  width: 90%; }
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-transform: uppercase;
+  width: 18.5%;
+  height: 400px;
+  background: lightgrey; }
+  .box:hover {
+    background: salmon; }
+  .box .title {
+    background: white;
+    padding: 20px;
+    width: 150px;
+    height: 30px;
+    margin-bottom: 50px;
+    font-size: 12px; }
+
+.baskify-thumb {
+  background-image: url("../../public/assets/baskify-app.png");
+  background-position: center; }
