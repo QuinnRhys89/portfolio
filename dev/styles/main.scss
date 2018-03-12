@@ -1,0 +1,146 @@
+@import 'setup';
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family:'Montserrat', sans-serif;
+	
+}
+
+.wrapper{
+	max-width: 1280px;
+	width: 90%;
+	margin: 0 auto;
+	
+}
+
+img{
+	max-width: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	
+}
+
+li{
+	list-style-type: none;
+}
+
+// Navigation
+
+main{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+// Header
+.main-nav{ 
+	margin-top: 80px;
+
+	ul{
+		display: flex;
+		justify-content: space-between;
+		padding: 0;
+	}
+	li{
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		font-weight: 500;
+		-ms-transform: rotate(-90deg); /* IE 9 */
+    	-webkit-transform: rotate(-90deg); /* Safari 3-8 */
+		transform: rotate(-90deg);
+	}
+}
+
+li a span:after{
+    content:"";
+    display: inline-block;
+    height: 0.5em;
+    vertical-align: bottom;
+    width: 30%;
+    margin-right: -100%;
+    margin-left: 10px;
+    border-top: 3px solid black;
+}
+
+	
+// Photo content
+
+.photo-content{
+	display: flex;
+	margin-top: 40px;
+}
+
+.icon{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	img{
+		width: 200px;
+	}
+}
+
+.main-image{
+	width: 50%;
+	position: relative;
+}
+
+.barcode{
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	right: 300px;
+}
+
+
+// Footer
+footer{
+	align-items: flex-end;
+	text-transform: uppercase;
+}
+
+.logo{
+	margin: 0;
+	padding: 0;
+
+	h4{
+		margin: 0;
+	}
+}
+
+
+
+// Jump Menu
+
+.jump-bar{
+	position: fixed;
+	right: 25px;
+	bottom: 30px;
+	ul li{
+		padding-top: 10px;
+	}
+}
+
+.circle{
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border: 2px solid black;
+}
+
+.circle:hover{
+	background: black;
+}
+
+
+ 
