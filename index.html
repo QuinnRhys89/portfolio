@@ -21,16 +21,16 @@
 				<ul>
 					<li><a href="#home">Home<span></span></a></li>
 					<li><a href="#about">About<span></span></a></li>
-					<li><a href="works.html">Works<span></span></a></li>
+					<li><a href="#works">Works<span></span></a></li>
 				</ul>
 			</nav>
 		</header>
 		
 		<!-- Main Section -->
-		<main class="main-carousel">
+		<main>
 
 <!-- Home Section -->
-			<section class="home-page carousel-cell" id="home">
+			<section class="home-page" id="home">
 				<!-- Logo || Left -->
 				<div class="home left">
 
@@ -42,21 +42,25 @@
 						<a href="https://www.linkedin.com/in/quinn-anderson-249203137/"><i class="fab fa-linkedin-in"></i></a>
 						<a href="https://medium.com/@quinnrhys89"><i class="fab fa-medium-m"></i></a>
 						<a href="https://github.com/QuinnRhys89"><i class="fab fa-github"></i></a>
+						<a href="https://github.com/QuinnRhys89">
+							<i class="fal fa-envelope"></i>
+						</a>
 					</div>
 
-					<!-- <div class="arrow">
-						<img src="../../public/assets/arrow.png" alt="">
-					</div> -->
 				</div>
-
+				
 				<!-- Home Image || Right -->
 				<div class="home right">
 					<img class="barcode" src="../../public/assets/barcode.png" alt="">
 				</div>
+
+				<a href="#about" class="arrow pulse">
+					<img src="../../public/assets/arrow.png" alt="">
+				</a>
 			</section>
 
 <!-- About Section -->
-			<section class="about-page carousel-cell" id="about">
+			<section class="about-page reveal" id="about">
 				<div class="about left">
 					<img src="../../public/assets/quinn-headshot.jpg" alt="">
 				</div>
@@ -68,94 +72,128 @@
 
 					<p class="about-text">I'm a front-end web developer who has a passion for solving complex programming tasks and a keen eye for design. I love creating designing sleek, minimalist apps.</p>
 				
-				</div>	
+				</div>
+				
+				<a href="#tools" class="arrow">
+					<img src="../../public/assets/arrow.png" alt="">
+				</a>
 			</section>
 
 <!-- Tools Section -->
-			<section class="tools-page carousel-cell" id="tools">
-				<div class="tools-container"></div>
-				<div class="tools right">
-					<h2>Toolkit</h2>
-					<div class="dev-icons">
-						<!-- SASS -->
-						<i class="devicon-sass-original devicon"></i>
-						<!-- JAVASCRIPT -->
-						<i class="devicon-javascript-plain devicon"></i>
-						<!-- JQUERY -->
-						<i class="devicon-jquery-plain-wordmark devicon"></i>
-						<!-- GULP  -->
-						<i class="devicon-gulp-plain devicon"></i>
-						<!-- CSS -->
-						<i class="devicon-css3-plain-wordmark devicon"></i>
-						<!-- HTML -->
-						<i class="devicon-html5-plain-wordmark devicon"></i>
-						<!-- VS CODE -->
-						<i class="devicon-visualstudio-plain devicon"></i>
-						<!-- GITHUB -->
-						<i class="devicon-github-plain devicon"></i>
-						<!-- GIT -->
-						<i class="devicon-git-plain devicon"></i>
-						<!-- REACT -->
-						<i class="devicon-react-original devicon"></i>
-					</div>
+			<section class="tools-page reveal" id="tools">
+				<h2>Toolkit</h2>
+				<div class="tools"></div>
+						<div class="dev-icons">
+							<!-- SASS -->
+							<i class="devicon-sass-original devicon"></i>
+							<!-- JAVASCRIPT -->
+							<i class="devicon-javascript-plain devicon"></i>
+							<!-- JQUERY -->
+							<i class="devicon-jquery-plain-wordmark devicon"></i>
+							<!-- GULP  -->
+							<i class="devicon-gulp-plain devicon"></i>
+							<!-- CSS -->
+							<i class="devicon-css3-plain-wordmark devicon"></i>
+							<!-- HTML -->
+							<i class="devicon-html5-plain-wordmark devicon"></i>
+							<!-- VS CODE -->
+							<i class="devicon-visualstudio-plain devicon"></i>
+							<!-- GITHUB -->
+							<i class="devicon-github-plain devicon"></i>
+							<!-- GIT -->
+							<i class="devicon-git-plain devicon"></i>
+							<!-- REACT -->
+							<i class="devicon-react-original devicon"></i>
+						</div>
+						<a href="#works" class="arrow">
+							<img src="../../public/assets/arrow.png" alt="">
+						</a>
 				</div>
+
 			</section>
 
 <!-- Portfolio Section -->
-			<section class="portfolio-page carousel-cell" id="portfolio">
+			<section class="portfolio-page reveal" id="works">
+				<h2>My Favourite Projects</h2>
 				<div class="portfolio-container">
-					<a href="baskify.html" class="portfolio-thumb">
+
+					<!--  Baskify -->
+					<div class="portfolio-thumb">
 						<div>
 							<img src="../../public/assets/baskify-app.png" alt="">
 						</div>
-						<p class="desc">View</p>
-					</a>
+						<div class="portfolio-links">
+							<a href="https://quinnrhys89.github.io/React-Project5/">
+								<p class="desc">View Live</p>
+							</a>
+							<a href="baskify.html">
+								<p class="desc">More Info</p>
+							</a>
+						</div>
+					</div>
 
+					<!-- Endless Times -->
 					<div class="portfolio-thumb">
 						<div>
 							<img src="../../public/assets/endlesstimes-desktop.png" alt="">
 						</div>
-						<p class="desc">View</p>
+						<div class="portfolio-links">
+							<a href="http://www.endlesstimes.io"><p class="desc">View Live</p></a>
+							<a href="endless-times.html"><p class="desc">More Info</p></a>
+						</div>
 					</div>
 
+					<!-- Space X -->
 					<div class="portfolio-thumb">
 						<div>
 							<img src="../../public/assets/spaceX-desktop.png" alt="">
 						</div>
-						<p class="desc">View</p>
-					</div>
+						<div class="portfolio-links">
+							<a href="https://spacex-1520285497524.firebaseapp.com/">
+								<p class="desc">View Live</p>
+							</a>
+							<a href="space-x.html">
+								<p class="desc">More Info</p>
+							</a>
+						</div>
+					</a>
 				</div>
+
+				<a href="#contact" class="arrow">
+					<img src="../../public/assets/arrow.png" alt="">
+				</a>
+			</section>
+<!-- Contact Page -->
+			<section class="contact-page" id="contact">
+				<section class="contact">
+					<h2>Get in Touch</h2>
+					<form action="sendMessage.php" method="POST" class="myForm" name="myForm">
+					
+						<div class="form-wrapper">
+					
+							<label for="name">Name:</label>
+							<input type="text" id="name" placeholder="name">
+					
+							<label for="email">E-mail:</label>
+							<input type="text" id="email" placeholder="email">
+					
+							<label for="phone">Phone:</label>
+							<input type="text" id="phone" placeholder="phone">
+					
+							<label for="comment">Message:</label>
+							<input type="text" id="comment" placeholder="comment">
+					
+							<input type="submit" value="submit">
+					
+						</div>
+
+					</form>
+				</section>
 			</section>
 
-
-<!-- Works Section -->
-			<!-- <section class="works carousel-cell" id="works">
-				<div class="works-container">
-					<div class="works-thumb">
-						<img src="../../public/assets/baskify-app.jpg" alt="">
-					</div>
-
-					<div class="works-thumb">
-						<img src="../../public/assets/baskify-app.jpg" alt="">
-					</div>
-				
-					<div class="works-thumb">
-						<img src="../../public/assets/baskify-app.jpg" alt="">
-					</div>	
-				</div>
-			</section> -->
-
-<!--  Contact Page -->
-			<!-- <section class="contact-page carousel-cell">
-				<div>
-					<p>text</p>
-				</div>
-			</section> -->
-
-			
-		</main>
-	</div>
-
+			<footer>
+				<p class="copyright">Quinn Anderson</p>
+			</footer>
 
 	<!-- Jquery  -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
@@ -165,6 +203,12 @@
 
 	<!-- Flickity -->
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+	<!-- Scroll Reveal -->
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+	<!-- Smooth Scroll -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
 
 	<script src="public/scripts/main.js"></script>
 </body>
