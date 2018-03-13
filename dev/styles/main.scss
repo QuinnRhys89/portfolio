@@ -10,13 +10,6 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 // Global Styles
 
-.container {
-	max-width: 900px;
-	margin: 0 auto;
-}
-
-
-
 body{
 	margin: 0;
 	padding: 0;
@@ -24,10 +17,8 @@ body{
 }
 
 .wrapper{
-	max-width: 1280px;
-	width: 90%;
+	max-width: 1380px;
 	margin: 0 auto;
-	
 }
 
 img{
@@ -52,6 +43,10 @@ main{
 }
 
 // Header
+header{
+	height: 150px;
+}
+
 .main-nav{ 
 	margin-top: 80px;
 
@@ -82,55 +77,198 @@ li a span:after{
 }
 
 	
-// Photo content
-
+// ************ HOME PAGE ************
 section{
 	display: flex;
 }
 
-.icon{
-	width: 50%;
+.home-page{
+	display: flex;
+	justify-content: center;
+	width: 98%;
+	margin: 0 auto;
+}
+
+.home{
+	width: 45%;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);	
+}
+
+.left{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 40px;	
+
+}
+
+.home.left{
+	border: 1px solid lightgrey;
+}
+
+.home.right{
+	background-image: url("../../public/assets/home-page-photo.jpg");
+	background-size: cover;
+	height: 500px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
-	img{
-		// width: 200px;
-		height: 300px
+	.barcode{
+		height: 120px;
 	}
 }
 
-.main-image{
-	width: 50%;
-	position: relative;
-}
-
-.barcode{
-	height: 100px;
-	position: absolute;
-	top: 50%;
-	right: 300px;
-}
-
-
-// Footer
-footer{
-	width: 100%;
-	text-transform: uppercase;
-}
-
-.logo{
+.main-title{
 	margin: 0;
 	padding: 0;
+}
 
-	h4{
-		margin: 0;
+.description{
+	margin-top: 10px;
+	padding: 0;
+}
+
+.social-links{
+	display: flex;
+	margin-top: 50px;
+	align-items: center;
+}
+
+svg{
+	margin-left: 15px;
+}
+
+.home:hover{
+	border: 1px solid grey;
+}
+
+.arrow{
+	margin-top: 100px;
+	height: 25px;
+	width: 25px;
+}
+
+
+// ************ HOME PAGE ************
+
+.about-page{
+	display: flex;
+	justify-content: center;
+	width: 98%;
+	margin: 100px auto auto auto;
+	
+}
+
+.about.right{
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.about{
+	text-align: left;	
+	width: 45%;
+}
+
+.about.left img{
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+	height: 400px;
+}
+
+.long-barcode{
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	width: 500px;
+}
+		
+// ************ TOOLS PAGE ************
+
+.tools-page{
+	display: flex;
+	justify-content: center;
+	width: 98%;
+	margin: 100px auto auto auto;
+}
+
+.tools{
+	text-align: left;	
+	width: 90%;
+	height: 500px;
+	border: 1px solid black;
+	display: flex;
+
+}
+
+
+.grey-rec{
+	background: lightgrey;
+	height: 100px;
+	width: 250px;
+	margin: 2s0px;
+}
+
+
+// ************ PORTFOLIO PAGE ************
+
+.portfolio-page{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 98%;
+	margin: 80px auto auto auto;
+}
+
+.portfolio{
+	width: 50%;
+	height: 500px;
+	border: 1px solid black;
+	text-align: left;
+	p{
+		background: lightgrey;
 	}
+}
+
+.panel{
+	display: flex;
+	width: 100%;
+	border: 1px solid black;
+	margin-top: 80px;	
+	align-items: center;
+}
+
+.subheading{
+	border: 1px solid black;
+	padding: 20px;
+}
+
+.portfolio-links{
+	font-weight: 500;
+}
+
+
+// ************ PORTFOLIO PAGE ************
+
+.tools{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.devicon{
+	font-size: 60px;
+	color: darkgrey;
+	margin-left: 20px;
 }
 
 
 
-// Jump Menu
+
+
+
 
 .jump-bar{
 	position: fixed;
