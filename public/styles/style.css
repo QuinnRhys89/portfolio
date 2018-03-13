@@ -150,6 +150,15 @@ a {
 li {
   list-style-type: none; }
 
+.main-carousel {
+  height: 520px; }
+
+.flickity-slider {
+  margin: 0 20px; }
+
+.flickity-viewport {
+  height: 500px; }
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,10 +168,11 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  height: 100vh; }
 
 header {
-  height: 150px; }
+  height: 80px; }
 
 .main-nav {
   margin-top: 80px; }
@@ -284,7 +294,7 @@ svg {
       -ms-flex-pack: center;
           justify-content: center;
   width: 98%;
-  margin: 100px auto auto auto; }
+  margin: 0 auto; }
 
 .about.right {
   height: 500px;
@@ -325,13 +335,12 @@ svg {
       -ms-flex-pack: center;
           justify-content: center;
   width: 98%;
-  margin: 100px auto auto auto; }
+  margin: 0 auto auto auto; }
 
 .tools {
   text-align: left;
   width: 90%;
   height: 500px;
-  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -354,12 +363,11 @@ svg {
       -ms-flex-pack: center;
           justify-content: center;
   width: 98%;
-  margin: 80px auto auto auto; }
+  margin: 0 auto; }
 
 .portfolio {
   width: 50%;
   height: 500px;
-  border: 1px solid black;
   text-align: left; }
   .portfolio p {
     background: lightgrey; }
@@ -369,14 +377,12 @@ svg {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  border: 1px solid black;
   margin-top: 80px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
 
 .subheading {
-  border: 1px solid black;
   padding: 20px; }
 
 .portfolio-links {
@@ -390,7 +396,9 @@ svg {
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .devicon {
   font-size: 60px;
@@ -407,8 +415,7 @@ svg {
 .circle {
   height: 15px;
   width: 15px;
-  border-radius: 50%;
-  border: 2px solid black; }
+  border-radius: 50%; }
 
 .circle:hover {
   background: black; }

@@ -8,24 +8,28 @@
 	<link rel="stylesheet" href="public/styles/style.css">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
 </head>
 <body>
 	<!-- Wrapper -->
 	<div class="wrapper">
-		<main>
-			<!-- Header || 15% Top -->
-			<header>
-				<nav class="main-nav">
-					<ul>
-						<li><a href="index.html">Home<span></span></a></li>
-						<li><a href="about.html">About<span></span></a></li>
-						<li><a href="works.html">Works<span></span></a></li>
-					</ul>
-				</nav>
-			</header>
-
+		<!-- Header || 15% Top -->
+		<header>
+			<nav class="main-nav">
+				<ul>
+					<li><a href="index.html">Home<span></span></a></li>
+					<li><a href="about.html">About<span></span></a></li>
+					<li><a href="works.html">Works<span></span></a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<!-- Main Section -->
+		<main class="main-carousel">
 <!-- Home Section -->
-			<section class="home-page">
+			<section class="home-page carousel-cell">
 				<!-- Logo || Left -->
 				<div class="home left">
 
@@ -51,7 +55,7 @@
 			</section>
 
 <!-- About Section -->
-			<section class="about-page">
+			<section class="about-page carousel-cell">
 				<div class="about left">
 					<img src="../../public/assets/quinn-headshot.jpg" alt="">
 				</div>
@@ -67,7 +71,7 @@
 			</section>
 
 <!-- Tools Section -->
-			<section class="tools-page">
+			<section class="tools-page carousel-cell">
 				<div class="tools-container"></div>
 				<div class="tools right">
 					<!-- SASS -->
@@ -228,6 +232,9 @@
 	
 	<!-- Font Awesome -->
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+	<!-- Flickity -->
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 	<script src="public/scripts/main.js"></script>
 </body>

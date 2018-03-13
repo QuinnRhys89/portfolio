@@ -1,5 +1,7 @@
-"use strict";
+'use strict';
 
-var ohHey = "Hello World";
-
-console.log(ohHey);
+$('.main-carousel').flickity({
+    // options
+    cellAlign: 'left',
+    contain: true
+});
