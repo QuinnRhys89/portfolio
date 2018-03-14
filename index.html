@@ -42,8 +42,7 @@
 						<a href="https://www.linkedin.com/in/quinn-anderson-249203137/"><i class="fab fa-linkedin-in"></i></a>
 						<a href="https://medium.com/@quinnrhys89"><i class="fab fa-medium-m"></i></a>
 						<a href="https://github.com/QuinnRhys89"><i class="fab fa-github"></i></a>
-						<a href="https://github.com/QuinnRhys89">
-							<i class="fal fa-envelope"></i>
+						<a href="mailto:quinn@quinnanderson.ca"><i class="fas fa-envelope"></i>
 						</a>
 					</div>
 
@@ -137,7 +136,8 @@
 			</section>
 
 <!-- Portfolio Section -->
-			<section class="portfolio-page reveal" id="works">
+			<section class="portfolio-page">
+				<span id="works"></span>
 				<h2>Recent Works</h2>
 				<div class="portfolio-container">
 
@@ -175,7 +175,7 @@
 					</div>
 
 					<!-- Endless Times -->
-					<div class="portfolio-thumb">
+					<div class="portfolio-thumb ordered">
 						
 						<div class="more-info middle">
 							<h3>The Endless Times</h3>
@@ -203,7 +203,7 @@
 						</div>
 					</div>
 
-				<!-- PSD Conversion -->
+				<!-- SpaceX Conversion -->
 				<div class="portfolio-thumb">
 					<div class="desktop">
 						<img src="../../public/assets/spaceX-desktop.png" alt="">
@@ -244,20 +244,20 @@
 			<section class="contact-page reveal" id="contact">
 				<section class="contact">
 					<h2>Work With Me</h2>
-					<form action="sendMessage.php" method="POST" class="myForm" name="myForm">
+					<form action="https://formspree.io/quinnrhys89@gmail.com" method="POST" class="myForm" name="myForm">
 					
 						<div class="form-wrapper">
 					
 							<label for="name">Name :</label>
-							<input type="text" id="name" placeholder="name">
+							<input type="text" name="name" id="name">
 					
 							<label for="email">E-mail :</label>
-							<input type="text" id="email" placeholder="email">
+							<input type="text" name="email" id="email">
 					
 							<label for="comment">Message :</label>
-							<textarea rows="4" cols="40" placeholder="your message here"></textarea>
+							<textarea rows="4" cols="40" placeholder="your message here" name="message"></textarea>
 					
-							<input type="submit" value="submit">
+							<input type="submit" value="Send">
 					
 						</div>
 
@@ -266,7 +266,27 @@
 			</section>
 
 			<footer>
-				<p class="copyright">Quinn Rhys Anderson &copy; 2018</p>
+				<div class="footer-text">
+					<p class="copyright">Quinn Rhys Anderson &copy; 2018</p>
+	
+					<div class="social">
+						<a href="https://twitter.com/?lang=en">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a href="https://www.linkedin.com/in/quinn-anderson-249203137/">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+						<a href="https://medium.com/@quinnrhys89">
+							<i class="fab fa-medium-m"></i>
+						</a>
+						<a href="https://github.com/QuinnRhys89">
+							<i class="fab fa-github"></i>
+						</a>
+						<a href="mailto:quinn@quinnanderson.ca">
+							<i class="fas fa-envelope"></i>
+						</a>
+					</div>
+				</div>
 			</footer>
 
 	<!-- Jquery  -->
