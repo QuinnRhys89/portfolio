@@ -274,6 +274,10 @@ svg{
 	}
 }
 
+.devicon{
+	width: 10%;
+}
+
 
 
 // ************ PORTFOLIO PAGE ************
@@ -338,6 +342,7 @@ svg{
 	justify-content: center;
 	text-align: left;
 	padding: 40px;
+	line-height: 1.5rem;
 	color: grey;
 	h3{
 		text-transform: uppercase;
@@ -365,6 +370,8 @@ svg{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 40px;
+	// padding-bottom: 0;
 }
 
 .contact{
@@ -378,7 +385,8 @@ svg{
 }
 
 form{
-	width: 600px;
+	max-width: 600px;
+	width: 90%;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);	
 	.form-wrapper{
 		margin: 60px;
@@ -386,6 +394,7 @@ form{
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		padding: 0 2%; 
 	}
 }
 
@@ -421,19 +430,21 @@ textarea{
 	padding-left: 10px;
 	padding-top: 10px;
 	border: 1px solid lightgrey;
-}
-
-footer{
-	margin-top: 80px;
+	resize: none;
+	overflow-y: scroll;
+	height: 100px;
+	min-width: 400px;
 }
 
 .footer-text{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 50%;
+	// display: flex;
+	// align-items: center;
+	// justify-content: space-between;
+	// width: 450px;
 	margin: 0 auto;
 	padding-bottom: 20px;
+	// min-width: 300px;
+	text-align: center;
 }
 
 .copyright{
@@ -442,6 +453,7 @@ footer{
 	color: grey;
 	letter-spacing: 1px;
 	padding: 0;
+	padding-bottom: 10px;
 	margin: 0;
 }
 
@@ -504,6 +516,12 @@ footer .social a{
 
 
 @media (max-width: 940px) {
+
+	.devicon{
+		width: 20%;
+		margin-top: 30px;
+		text-align: center;
+	}
 
 	.home-page{
 		margin-bottom: 100px;
@@ -576,9 +594,6 @@ footer .social a{
 
 @media (max-width: 768px){
 
-	// body{
-	// 	background: red;
-	// }
 
 	section{
 		margin-bottom: 100px;
@@ -641,14 +656,10 @@ footer .social a{
 		height: auto;
 	}
 
-	.devicons{
-		width: 20%;
-		padding-bottom: 40px;
-		align-items: space-between;
-	}
-
 	.devicon{
-		padding-top: 30px;
+		width: 33.33%;
+		margin-top: 50px;
+		text-align: center;
 	}
 
 	.about-text{
@@ -666,6 +677,17 @@ footer .social a{
 
 	.about.left{
 		min-width: 300px;
+		margin: 0 auto;
+	}
+
+	textarea{
+		min-width: 250px;
+		width: 90%;
+	}
+
+	.portfolio-thumb{
+		border-bottom: 1px solid lightgrey;
+		padding-bottom: 40px;
 	}
 	
 }
@@ -673,19 +695,20 @@ footer .social a{
 
 @media (max-width: 480px) {
 
-	// body{
-	// 	background: yellow;
-	// }
-
+	.dev-icons .devicon{
+		font-size: 40px;
+	}
+	
+	.devicon{
+		width: 33.33%;
+		margin-top: 50px;
+		text-align: center;
+	}
 
 	section{
 		padding-bottom: 100px;
 	}
-	.portfolio-thumb{
-		border-bottom: 1px solid lightgrey;
-		padding-bottom: 40px;
-	
-	}
+
 	
 	.about-text{
 		margin: 0 auto;
@@ -694,6 +717,20 @@ footer .social a{
 	.long-barcode{
 		display: none;
 	}
+
+	.about-text{
+		margin-top:300px;
+	}
+
+	.contact-page{
+		margin-bottom: -100px;
+		padding-bottom: 0;
+	}
+
+	.footer-text{
+		padding-top: 150px;
+	}
+
 }
 
 

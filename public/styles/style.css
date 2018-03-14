@@ -417,6 +417,9 @@ svg {
     font-size: 60px;
     color: darkgrey; }
 
+.devicon {
+  width: 10%; }
+
 .portfolio-page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -503,6 +506,7 @@ svg {
           justify-content: center;
   text-align: left;
   padding: 40px;
+  line-height: 1.5rem;
   color: grey; }
   .more-info h3 {
     text-transform: uppercase;
@@ -529,7 +533,8 @@ svg {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-bottom: 40px; }
 
 .contact {
   display: -webkit-box;
@@ -549,7 +554,8 @@ svg {
     margin-bottom: 40px; }
 
 form {
-  width: 600px;
+  max-width: 600px;
+  width: 90%;
   -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4); }
   form .form-wrapper {
@@ -566,7 +572,8 @@ form {
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    padding: 0 2%; }
 
 input[type="text"] {
   margin-bottom: 40px;
@@ -596,24 +603,16 @@ textarea {
   margin-bottom: 40px;
   padding-left: 10px;
   padding-top: 10px;
-  border: 1px solid lightgrey; }
-
-footer {
-  margin-top: 80px; }
+  border: 1px solid lightgrey;
+  resize: none;
+  overflow-y: scroll;
+  height: 100px;
+  min-width: 400px; }
 
 .footer-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 50%;
   margin: 0 auto;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  text-align: center; }
 
 .copyright {
   font-size: 10px;
@@ -621,6 +620,7 @@ footer {
   color: grey;
   letter-spacing: 1px;
   padding: 0;
+  padding-bottom: 10px;
   margin: 0; }
 
 footer .social a {
@@ -664,6 +664,10 @@ footer .social a {
     margin-top: 40px; } }
 
 @media (max-width: 940px) {
+  .devicon {
+    width: 20%;
+    margin-top: 30px;
+    text-align: center; }
   .home-page {
     margin-bottom: 100px; }
   .about-page,
@@ -780,14 +784,10 @@ footer .social a {
             align-items: center;
     margin-top: 100px;
     height: auto; }
-  .devicons {
-    width: 20%;
-    padding-bottom: 40px;
-    -webkit-box-align: space-between;
-        -ms-flex-align: space-between;
-            align-items: space-between; }
   .devicon {
-    padding-top: 30px; }
+    width: 33.33%;
+    margin-top: 50px;
+    text-align: center; }
   .about-text {
     line-height: 1.4rem; }
   .home-page {
@@ -795,15 +795,32 @@ footer .social a {
   .more-info {
     padding: 0; }
   .about.left {
-    min-width: 300px; } }
-
-@media (max-width: 480px) {
-  section {
-    padding-bottom: 100px; }
+    min-width: 300px;
+    margin: 0 auto; }
+  textarea {
+    min-width: 250px;
+    width: 90%; }
   .portfolio-thumb {
     border-bottom: 1px solid lightgrey;
-    padding-bottom: 40px; }
+    padding-bottom: 40px; } }
+
+@media (max-width: 480px) {
+  .dev-icons .devicon {
+    font-size: 40px; }
+  .devicon {
+    width: 33.33%;
+    margin-top: 50px;
+    text-align: center; }
+  section {
+    padding-bottom: 100px; }
   .about-text {
     margin: 0 auto; }
   .long-barcode {
-    display: none; } }
+    display: none; }
+  .about-text {
+    margin-top: 300px; }
+  .contact-page {
+    margin-bottom: -100px;
+    padding-bottom: 0; }
+  .footer-text {
+    padding-top: 150px; } }
