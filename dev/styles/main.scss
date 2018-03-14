@@ -33,6 +33,10 @@ a:hover{
 	color: lightgrey;
 }
 
+.main-nav ul a:hover span{
+	color:lightgrey;
+}
+
 h2{
 	font-weight: 500;
 }
@@ -187,6 +191,28 @@ svg{
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
+	
+}
+
+.about-title{
+	display: flex;
+	align-items: center;
+	span{
+		width: 30px;
+		border-top: 3px solid black;
+		margin-left: 20px;
+		display: block;
+	}
+} 
+
+
+.about-text{
+	display: flex;
+	flex-direction: column;
+	line-height: 1.5rem;
+	p{
+		text-align: left;
+	}
 }
 
 .about{
@@ -196,7 +222,7 @@ svg{
 
 .about.left img{
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
-	height: 400px;
+	width: 300px;
 }
 
 .long-barcode{
@@ -205,6 +231,17 @@ svg{
 	left: -60px;
 	top: 120px;
 	width: 500px;
+}
+
+.email-link{
+	color: black;
+	border-bottom: 1px solid black;
+	font-weight: 600;
+}
+
+.email-link:hover{
+	text-transform: uppercase;
+	color: black;
 }
 		
 // ************ TOOLS PAGE ************
@@ -231,6 +268,7 @@ svg{
 	display: flex;
 	justify-content: space-around;
 	width: 80%;
+	flex-wrap: wrap;
 	.devicon{
 		font-size: 60px;
 		color: darkgrey;
@@ -245,8 +283,9 @@ svg{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
 	flex-direction: column;
+	padding-top: 100px;
+	margin-bottom: 100px;
 	h2{
 		margin-bottom: 60px;
 	}
@@ -254,21 +293,76 @@ svg{
 .portfolio-container{
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
 	.portfolio-thumb{
-		width: 30%;
 		text-align: center;
+		width: 100%;
+		display: flex;
 	}
 }
 
 .portfolio-links{
 	display: flex;
 	justify-content: center;
+	width: 60%;
+	justify-content: center;
+	font-size: 15px;
+	letter-spacing: 0.5px;
+	font-weight: 500;
 }
 
 .portfolio-links a:first-child{
 	padding-right: 20px;
 }
 
+.tools-used{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+
+.tools-used span{
+	border: 1px solid black;
+	padding: 10px;
+	font-size: 10px;
+	text-transform: uppercase;
+	border-radius: 5px 5px;	
+	margin: 5px 3px;
+}
+
+.more-info{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+	padding: 40px;
+	h3{
+		text-transform: uppercase;
+		font-weight: 500;
+		margin-top: 0;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.desktop, 
+.more-info{
+	width: 50%;
+}
+
+.collab{
+	font-weight: 600;
+}
+
+// .more-info.middle{
+// 	margin-right: 0;
+// 	text-align: right;
+// 	.tools-used{
+// 		justify-content: flex-end;
+// 	}
+// }
 
 // ************ CONTACT PAGE ************
 
@@ -290,8 +384,8 @@ svg{
 }
 
 form{
-	border: 1px solid grey;
 	width: 600px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);	
 	.form-wrapper{
 		margin: 60px;
 		display: flex;
@@ -303,13 +397,38 @@ form{
 
 input[type="text"]{
 	margin-bottom: 40px;
-	width: 45%;
+	padding: 10px 0 10px 10px;
 }
 
 input[type="submit"]{
-	width: 100px;
+	text-transform: uppercase;
+	border: none;
+	border: 1px solid black;
+	padding: 15px 30px;
+	text-align: center;
+	background: none;
 }
 
+label{
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+textarea{
+	margin-bottom: 20px;
+}
+
+.copyright{
+	font-size: 10px;
+	text-transform: uppercase;
+	color: grey;
+	text-align: center;
+	margin-bottom: 25px;
+	letter-spacing: 1px;
+}
+
+
+// Pulse Animation 
 
 .pulse{
     animation-name: pulse;
@@ -322,8 +441,6 @@ input[type="submit"]{
     -webkit-animation-iteration-count: infinite;
 }
 
-
-// Pulse Animation 
 
 @keyframes pulse {
     0% {
@@ -355,123 +472,53 @@ input[type="submit"]{
     }           
 }
 
-
-// .portfolio{
-// 	width: 50%;
-// 	height: 500px;
-// 	text-align: left;
-// 	p{
-// 		background: lightgrey;
-// 	}
-// }
-
-// .panel{
-// 	display: flex;
-// 	width: 100%;
-// 	margin-top: 80px;	
-// 	align-items: center;
-// }
-
-// .subheading{
-// 	padding: 20px;
-// }
-
-// .portfolio-links{
-// 	font-weight: 500;
-// }
-
-
-
-
-
-// *********** Works Page ***********
-
-// .works{
-// 	display: flex;
-// 	justify-content: space-around;
-// 	align-items: center;
-// 	flex-wrap: wrap;
-// }
-
-
-// .works-container{
-// 	display: flex;
-// 	margin-top: 80px;
-// 	width: 90%;
-// }
-
-// .works-thumb{
-// 		height: 500px;
-// }
-
-
-
-
-
-// .box{
-// 	display: flex;
-// 	align-items: flex-end;
-// 	text-transform: uppercase;
-// 	width: 28%;
-// 	height: 500px;
-// 	background: lightgrey;
-// 	&:hover{
-// 		background: salmon;
-// 	}
-// 	.title{
-// 		background: white;
-// 		padding: 20px;
-// 		width: 150px;
-// 		height: 30px;
-// 		margin-bottom: 50px;
-// 		font-size: 12px;
-// 	}
-// }
-
-
-// Flickity Styles
-
-
-// /* big buttons, no circle */
-// button{
-// 	background: transparent;
-// }
-
-// .flickity-prev-previous-button:hover {
-//   background: intial;
-// }
-
-
 // *********** Responsive ***********
 
-@media (max-width: 940px) {
-	body{
-		background: red;
+@media (max-width: 1096px) {
+	.home-page{
+		margin-top: 40px;
 	}
 }
 
-@media (max-width: 768px){
-	
+
+@media (max-width: 940px) {
+
 }
 
 @media (max-width: 768px){
+
+}
+
+@media (max-width: 768px){
+	section{
+		margin-bottom: 100px;
+		height: auto;
+	}
+	.wrapper{
+		width: 90%;
+	}
 	.home-page{
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
+
 	.home{
 		width: 100%;
 		margin: 0;
 		height: 500px;
+		margin-top: 50px;
 	}
 
-	.main-carousel{
-	height: 1100px;
+	.home.left{
+		margin: 0;
 	}
 
-	.flickity-page-dots{
-		margin-bottom: 50px;
+	.home.right{
+		margin: 0;
+		margin-top: 50px;
+		
 	}
-
 
 	.main-nav ul{
 		flex-direction: column;
@@ -483,13 +530,37 @@ input[type="submit"]{
     	-webkit-transform: rotate(360deg); /* Safari 3-8 */
 		transform: rotate(360deg);
 	}
+
+	.portfolio-container{
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+	
+	.portfolio-thumb{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 100px;
+	}
+
+	.devicons{
+		width: 20%;
+		padding-bottom: 40px;
+	}
+
+
+
+	
 }
 
 
 @media (max-width: 480px) {
-	body{
-		background:yellow;
+	.arrow{
+		display: none;
 	}
+
 
 	
 }
