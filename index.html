@@ -4,33 +4,74 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Quinn Anderson || Web Developer</title>
+	<title>Quinn Anderson</title>
 	<link rel="stylesheet" href="public/styles/style.css">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700" rel="stylesheet">
 	<!-- CSS -->
 	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="public/assets/portfolio-favicon.png">
 
 </head>
 <body>
+	<span id="home"></span>
+
+	<!-- Jump Navigation -->
+	<nav class="jump-bar">
+		<ul>
+			<li class="active pulse">
+				<a href="#home" class="scroll" aria-label="go to home section">
+					<i class="fa fa-circle"></i>
+				</a>
+			</li>
+	
+			<li>
+				<a href="#about" class="scroll" aria-label="go to about section">
+					<i class="fa fa-circle"></i>
+				</a>
+			</li>
+	
+			<li>
+				<a href="#tools" class="scroll" aria-label="go to toolkit section">
+					<i class="fa fa-circle"></i>
+				</a>
+			</li>
+	
+			<li>
+				<a href="#works" aria-label="go to works section" class="scroll">
+					<i class="fa fa-circle"></i>
+				</a>
+			</li>
+	
+			<li>
+				<a href="#contact" aria-label="go to contact section" class="scroll">
+					<i class="fa fa-circle"></i>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<!-- End of Jump Navigation -->
+
+
 	<!-- Wrapper -->
 	<div class="wrapper">
 		<!-- Header || 15% Top -->
 		<header>
 			<nav class="main-nav">
 				<ul>
-					<li><a href="#home">Home<span></span></a></li>
-					<li><a href="#about">About<span></span></a></li>
-					<li><a href="#works">Works<span></span></a></li>
+					<li><a href="#about">About <span></span></a></li>
+					<li><a href="#works">Works <span></span></a></li>
+					<li><a href="#contact">Contact <span></span></a></li>
 				</ul>
 			</nav>
 		</header>
+
 		
 		<!-- Main Section -->
 		<main>
 
 <!-- Home Section -->
-			<section class="home-page" id="home">
+			<section class="home-page">
 				<!-- Logo || Left -->
 				<div class="home left">
 
@@ -38,11 +79,11 @@
 					<p class="description">Web Developer + Creative</p>
 
 					<div class="social-links">
-						<a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
-						<a href="https://www.linkedin.com/in/quinn-anderson-249203137/"><i class="fab fa-linkedin-in"></i></a>
-						<a href="https://medium.com/@quinnrhys89"><i class="fab fa-medium-m"></i></a>
-						<a href="https://github.com/QuinnRhys89"><i class="fab fa-github"></i></a>
-						<a href="mailto:quinn@quinnanderson.ca"><i class="fas fa-envelope"></i>
+						<a href="https://twitter.com/?lang=en"><i class="fab fa-twitter" alt="twitter"></i></a>
+						<a href="https://www.linkedin.com/in/quinn-anderson-249203137/"><i class="fab fa-linkedin-in" alt="LinkedIn"></i></a>
+						<a href="https://medium.com/@quinnrhys89"><i class="fab fa-medium-m" alt="Medium"></i></a>
+						<a href="https://github.com/QuinnRhys89"><i class="fab fa-github" alt="GitHub"></i></a>
+						<a href="mailto:quinn@quinnanderson.ca"><i class="fas fa-envelope" alt="Email Quinn at quinnrhys89@gmail.com"></i>
 						</a>
 					</div>
 
@@ -54,14 +95,14 @@
 				</div>
 
 				<a href="#about" class="arrow pulse">
-					<img src="../../public/assets/arrow.png" alt="">
+					<img src="../../public/assets/arrow.png" alt="go to about section">
 				</a>
 			</section>
 
 <!-- About Section -->
 			<section class="about-page reveal" id="about">
 				<div class="about left">
-					<img src="../../public/assets/quinn-headshot.jpg" alt="">
+					<img src="../../public/assets/quinn-headshot.jpg" alt="Quinn Anderson">
 				</div>
 
 				<img class="long-barcode" src="../../public/assets/long-barcode.png" alt="">
@@ -98,7 +139,7 @@
 
 				
 				<a href="#tools" class="arrow">
-					<img src="../../public/assets/arrow.png" alt="">
+					<img src="../../public/assets/arrow.png" alt="go to toolkit section">
 				</a>
 			</section>
 
@@ -108,29 +149,29 @@
 						<h2>My Developer Toolkit</h2>
 				</div>
 				<div class="dev-icons">
-					<!-- SASS -->
-					<i class="devicon-sass-original devicon"></i>
-					<!-- JAVASCRIPT -->
-					<i class="devicon-javascript-plain devicon"></i>
-					<!-- JQUERY -->
-					<i class="devicon-jquery-plain-wordmark devicon"></i>
-					<!-- GULP  -->
-					<i class="devicon-gulp-plain devicon"></i>
-					<!-- CSS -->
-					<i class="devicon-css3-plain-wordmark devicon"></i>
-					<!-- HTML -->
-					<i class="devicon-html5-plain-wordmark devicon"></i>
-					<!-- VS CODE -->
-					<i class="devicon-visualstudio-plain devicon"></i>
-					<!-- GITHUB -->
-					<i class="devicon-github-plain devicon"></i>
-					<!-- GIT -->
-					<i class="devicon-git-plain devicon"></i>
 					<!-- REACT -->
-					<i class="devicon-react-original devicon"></i>
+					<i class="devicon-react-original devicon" alt="React.js"></i>
+					<!-- JAVASCRIPT -->
+					<i class="devicon-javascript-plain devicon" alt="JavaScript"></i>
+					<!-- JQUERY -->
+					<i class="devicon-jquery-plain-wordmark devicon" alt="jQuery"></i>
+					<!-- CSS -->
+					<i class="devicon-css3-plain-wordmark devicon" alt="CSS3"></i>
+					<!-- HTML -->
+					<i class="devicon-html5-plain-wordmark devicon" alt="HTML5"></i>
+					<!-- SASS -->
+					<i class="devicon-sass-original devicon" alt="SASS"></i>
+					<!-- GULP  -->
+					<i class="devicon-gulp-plain devicon" alt="Gulp.js"></i>
+					<!-- VS CODE -->
+					<i class="devicon-visualstudio-plain devicon" alt="Visual Studio Code"></i>
+					<!-- GITHUB -->
+					<i class="devicon-github-plain devicon" alt="GitHub"></i>
+					<!-- GIT -->
+					<i class="devicon-git-plain devicon" alt="Git"></i>	
 				</div>
 				<a href="#works" class="arrow">
-					<img src="../../public/assets/arrow.png" alt="">
+					<img src="../../public/assets/arrow.png" alt="go to works section">
 				</a>
 
 			</section>
@@ -141,22 +182,57 @@
 				<h2>Recent Works</h2>
 				<div class="portfolio-container">
 
+					<!-- Seinfeld Quiz Game -->
+					<div class="portfolio-thumb ordered">
+					
+						<div class="more-info middle">
+							<h3> Seinfeld: Who Said It?</h3>
+					
+							
+							<p>The quick, quotable, quiz game for "the show about nothing" that surprises and delights!</p>
+							
+					
+							<p class="tools-used">
+								<span>JavaScript</span>
+								<span>jQuery</span>
+								<span>CSS</span>
+								<span>HTML5</span>
+								<span>Giphy API</span>
+								<span>Seinfeld Quotes API</span>
+							</p>
+					
+							<div class="portfolio-links">
+								<a href="https://quinnrhys89.github.io/seinfeld-js-game/" target="_blank">
+							
+									<p class="desc">View Live</p>
+								</a>
+								<a href="https://github.com/QuinnRhys89/seinfeld-js-game" target="_blank">
+									<p class="desc">GitHub</p>
+								</a>
+							</div>
+						</div>
+					
+						<div class="desktop">
+							<img src="../../public/assets/seinfeld-quiz-game.jpg" alt="desktop version of Seinfeld: Who Said It? app">
+						</div>
+					</div>
+
 					<!--  Baskify -->
 					<div class="portfolio-thumb">
 						<div class="desktop">
-							<img src="../../public/assets/baskify-app.png" alt="">
+							<img src="../../public/assets/baskify-app.jpg" alt="desktop version of Baskify app">
 						</div>
 
 						<div class="more-info">
 							<h3>Baskify App</h3>
 
-							<p>Baskify is the white-noise machine app you didn’t know you needed! Mix, match and layer soundclips to create a customized soundscape to relax or boost productivity.</p>
+							<p>Baskify is the white-noise machine app you didn’t know you needed! Mix, match and layer soundclips to create a customized soundscape to boost productivity or to simply relax.</p>
 
 							<p class="tools-used">
 								<span>React</span>
-								<span>Javascript</span>
+								<span>JavaScript</span>
 								<span>Firebase</span>
-								<span>SASS</span>
+								<span>CSS + SASS</span>
 								<span>Google Authentication</span>
 								<span>Gulp</span>
 							</p>
@@ -167,7 +243,7 @@
 									<p class="desc">View Live</p>
 								</a>
 								<a href="https://github.com/QuinnRhys89/React-Project5" target="_blank">
-									<p class="desc">Github</p>
+									<p class="desc">GitHub</p>
 								</a>
 							</div>
 						</div>
@@ -180,45 +256,44 @@
 						<div class="more-info middle">
 							<h3>The Endless Times</h3>
 							
-							<p>Browse top headlines and news articles in over 50 countries around the world using this news aggregator app. Built in collaboration with <span class="collab">Carolyn McNeillie</span></p>
+							<p>Browse top headlines and news articles in over 50 countries around the world using this news aggregator app. Built in collaboration with <a href="http://www.carolynmcneillie.com/" class="collab">Carolyn McNeillie</a></p>
 							
 							<p class="tools-used">
-								<span>React</span>
-								<span>Javascript</span>
-								<span>SASS</span>
-								<span>JQuery</span>
-								<span>News API</span>
+								<span>JavaScript</span>
+								<span>jQuery</span>
+								<span>CSS + SASS</span>
 								<span>OpenWeatherMap API</span>
+								<span>News API</span>
 								<span>Paired Programming</span>
 							</p>
 							
 							<div class="portfolio-links">
 								<a href="http://endlesstimes.io/" target="_blank"><p class="desc">View Live</p></a>
-								<a href="https://github.com/QuinnRhys89/Infinite-News" target="_blank"><p class="desc">Github</p></a>
+								<a href="https://github.com/QuinnRhys89/Infinite-News" target="_blank"><p class="desc">GitHub</p></a>
 							</div>	
 						</div>
 
 						<div class="desktop">
-							<img src="../../public/assets/endlesstimes-desktop.png" alt="">
+							<img src="../../public/assets/endlesstimes-desktop.jpg" alt="desktop version of The Endless Times app">
 						</div>
 					</div>
 
 				<!-- SpaceX Conversion -->
 				<div class="portfolio-thumb">
 					<div class="desktop">
-						<img src="../../public/assets/spaceX-desktop.png" alt="">
+						<img src="../../public/assets/spaceX-desktop.jpg" alt="desktop version of SpaceX Launch Tracker app">
 					</div>
 				
 					<div class="more-info">
 						<h3>SpaceX Launch Tracker</h3>
-						<p>Pretend you're Elon Musk and follow a Falcon 9 SpaceX rocket on its journey through space. This app was created as an informational tool to track upcoming rocket launches as well as demonstrate the monumental significance of the SpaceX brand.</p>
+						<p>Pretend you're Elon Musk and follow a Falcon 9 SpaceX rocket on its journey through space. This app was created as an informational tool to track upcoming rocket launches as well as demonstrate the monumental significance of the SpaceX brand. This App was built in collaboration with <a href="http://www.angelinelam.com/" class="collab">Angeline Lam</a> and <a href="http://joeydeol.com/" class="collab">Joey Deol</a></p>
 				
 						<p class="tools-used">
 							<span>React</span>
-							<span>Javascript</span>
-							<span>SASS</span>
-							<span>RESTful API</span>
-							<span>GULP</span>
+							<span>JavaScript</span>
+							<span>CSS + SASS</span>
+							<span>SpaceX API</span>
+							<span>Google Maps API</span>
 							<span>Group Programming</span>
 						</p>
 				
@@ -226,8 +301,8 @@
 							<a href="https://spacex-1520285497524.firebaseapp.com/home" target="_blank">
 								<p class="desc">View Live</p>
 							</a>
-							<a href="" target="_blank">
-								<p class="desc">Github</p>
+							<a href="https://github.com/QuinnRhys89/spaceX-brief" target="_blank">
+								<p class="desc">GitHub</p>
 							</a>
 						</div>
 				
@@ -237,11 +312,12 @@
 				</div>
 
 				<a href="#contact" class="arrow">
-					<img src="../../public/assets/arrow.png" alt="">
+					<img src="../../public/assets/arrow.png" alt="go to contact section">
 				</a>
 			</section>
 <!-- Contact Page  -->
-			<section class="contact-page reveal" id="contact">
+			<span id="contact"></span>
+			<section class="contact-page reveal">
 				<div class="contact">
 					<h2>Work With Me</h2>
 					<form action="https://formspree.io/quinnrhys89@gmail.com" method="POST" class="myForm" name="myForm">
@@ -255,7 +331,7 @@
 							<input type="text" name="email" id="email">
 					
 							<label for="comment">Message :</label>
-							<textarea rows="4" placeholder="Your message here" name="message"></textarea>
+							<textarea rows="4" placeholder="Your message here" name="comment"></textarea>
 					
 							<input type="submit" value="Send">
 					
@@ -270,19 +346,19 @@
 	
 					<div class="social">
 						<a href="https://twitter.com/?lang=en">
-							<i class="fab fa-twitter"></i>
+							<i class="fab fa-twitter" alt="twitter"></i>
 						</a>
 						<a href="https://www.linkedin.com/in/quinn-anderson-249203137/">
-							<i class="fab fa-linkedin-in"></i>
+							<i class="fab fa-linkedin-in" alt="LinkedIn"></i>
 						</a>
 						<a href="https://medium.com/@quinnrhys89">
-							<i class="fab fa-medium-m"></i>
+							<i class="fab fa-medium-m" alt="Medium"></i>
 						</a>
 						<a href="https://github.com/QuinnRhys89">
-							<i class="fab fa-github"></i>
+							<i class="fab fa-github" alt="GitHub"></i>
 						</a>
 						<a href="mailto:quinn@quinnanderson.ca">
-							<i class="fas fa-envelope"></i>
+							<i class="fas fa-envelope" alt="quinnrhys89@gmail.com"></i>
 						</a>
 					</div>
 				</div>
@@ -293,9 +369,6 @@
 	
 	<!-- Font Awesome -->
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
-	<!-- Flickity -->
-	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 	<!-- Scroll Reveal -->
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>

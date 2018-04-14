@@ -1,3 +1,68 @@
+.about-page{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.about.right{
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.about-title{
+	display: flex;
+	align-items: center;
+	max-height: 600px;
+	margin-bottom: 30px;
+	span{
+		width: 30px;
+		border-top: 3px solid black;
+		margin-left: 20px;
+		display: block;
+	}
+} 
+
+
+.about-text{
+	display: flex;
+	flex-direction: column;
+	line-height: 1.5rem;
+	p{
+		text-align: left;
+	}
+}
+
 .about{
-    color: red;
+	text-align: left;	
+	width: 45%;
+}
+
+.about.left img{
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+	width: 300px;
+
+}
+
+.long-barcode{
+	position: absolute;
+	z-index: -1;
+	left: -60px;
+	top: 120px;
+	width: 500px;
+}
+
+.email-link{
+	color: black;
+	border-bottom: 1px solid black;
+	font-weight: 600;
+}
+
+.email-link:hover{
+	text-transform: uppercase;
+	color: black;
 }
