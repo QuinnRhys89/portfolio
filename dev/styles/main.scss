@@ -7,6 +7,9 @@
 @import 'contact';
 @import 'responsive';
 
+$maincolor: #000;
+$secondcolor: salmon;
+
 // Global Styles
 
 body{
@@ -26,21 +29,21 @@ img{
 
 a{
 	text-decoration: none;
-	color: black;
+	color: $maincolor;
     background: none;
     transition: color 0.5s ease;	
 }
 
 a:hover{
-    color: lightgrey; 
+    color: $secondcolor; 
 }
 
 a:hover span{
-    color: lightgrey; 
+    color: $secondcolor; 
 }
 
 .main-nav ul a:hover span{
-	color:lightgrey;
+	color: $secondcolor;
 }
 
 h2{
@@ -50,52 +53,3 @@ h2{
 li{
 	list-style-type: none;
 }
-
-// Pulse Animation 
-
-.pulse{
-    animation-name: pulse;
-    -webkit-animation-name: pulse;  
-
-    animation-duration: 1.5s;   
-    -webkit-animation-duration: 1.5s;
-
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-}
-
-
-@keyframes pulse {
-    0% {
-        transform: scale(0.9);
-        opacity: 0.7;       
-    }
-    50% {
-        transform: scale(1);
-        opacity: 1; 
-    }   
-    100% {
-        transform: scale(0.9);
-        opacity: 0.7;   
-    }           
-}
-
-@-webkit-keyframes pulse {
-    0% {
-        -webkit-transform: scale(0.95);
-        opacity: 0.7;       
-    }
-    50% {
-        -webkit-transform: scale(1);
-        opacity: 1; 
-    }   
-    100% {
-        -webkit-transform: scale(0.95);
-        opacity: 0.7;   
-    }           
-}
-
-
-
-
- 

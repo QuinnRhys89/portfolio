@@ -42,8 +42,8 @@
 
 
 .tools-used span{
-	border: 1px solid grey;
-	color: grey;
+	border: 1px solid $secondaycolor;
+	color: $secondaycolor;
 	padding: 10px;
 	font-size: 10px;
 	text-transform: uppercase;
@@ -59,14 +59,14 @@
 	text-align: left;
 	padding: 40px;
 	line-height: 1.5rem;
-	color: grey;
+	color: $secondaycolor;
 	h3{
 		text-transform: uppercase;
 		font-weight: 500;
 		margin-top: 0;
 		width: 100%;
 		text-align: center;
-		color: black;
+		color: $maincolor;
 	}
 }
 

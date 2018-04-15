@@ -851,19 +851,19 @@ img {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #000;
   background: none;
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease; }
 
 a:hover {
-  color: lightgrey; }
+  color: salmon; }
 
 a:hover span {
-  color: lightgrey; }
+  color: salmon; }
 
 .main-nav ul a:hover span {
-  color: lightgrey; }
+  color: salmon; }
 
 h2 {
   font-weight: 500; }

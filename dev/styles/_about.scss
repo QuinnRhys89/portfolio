@@ -21,7 +21,7 @@
 	margin-bottom: 30px;
 	span{
 		width: 30px;
-		border-top: 3px solid black;
+		border-top: 3px solid $maincolor;
 		margin-left: 20px;
 		display: block;
 	}
@@ -58,11 +58,11 @@
 
 .email-link{
 	color: black;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid $maincolor;
 	font-weight: 600;
 }
 
 .email-link:hover{
 	text-transform: uppercase;
-	color: black;
+	color: $maincolor;
 }
