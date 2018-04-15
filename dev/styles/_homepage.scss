@@ -25,6 +25,7 @@
 	margin-right: 35px;
 }
 
+
 .home.right{
 	background-image: url("../../public/assets/home-page-photo.jpg");
 	background-size: cover;
@@ -63,7 +64,7 @@ svg{
 }
 
 .home:hover{
-	border: 1px solid $secondaycolor;
+	border: 1px solid grey;
 }
 
 

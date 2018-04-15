@@ -1,14 +1,7 @@
-@import 'setup';
-@import 'header';
-@import 'homepage';
-@import 'about';
-@import 'tools';
-@import 'portfolio';
-@import 'contact';
-@import 'responsive';
+
 
 $maincolor: #000;
-$secondcolor: salmon;
+$secondcolor: grey;
 
 // Global Styles
 
@@ -53,3 +46,14 @@ h2{
 li{
 	list-style-type: none;
 }
+
+
+
+@import 'setup';
+@import 'header';
+@import 'homepage';
+@import 'about';
+@import 'tools';
+@import 'portfolio';
+@import 'contact';
+@import 'responsive';
