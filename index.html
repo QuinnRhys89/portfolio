@@ -69,33 +69,41 @@
 		<main>
 
 <!-- Home Section -->
-			<section class="home-page">
-				<!-- Logo || Left -->
-				<div class="home left">
+<section class="home-page">
+	<!-- Logo || Left -->
+	<div class="home left">
 
-					<h1 class="main-title">Quinn Anderson</h1>
-					<p class="description">Web Developer + Creative</p>
+		<h1 class="main-title">Quinn Anderson</h1>
+		<p class="description">Web Developer + Creative</p>
 
-					<div class="social-links">
-						<a href="https://twitter.com/?lang=en"><i class="fab fa-twitter" alt="twitter"></i></a>
-						<a href="https://www.linkedin.com/in/quinn-anderson-249203137/"><i class="fab fa-linkedin-in" alt="LinkedIn"></i></a>
-						<a href="https://medium.com/@quinnrhys89"><i class="fab fa-medium-m" alt="Medium"></i></a>
-						<a href="https://github.com/QuinnRhys89"><i class="fab fa-github" alt="GitHub"></i></a>
-						<a href="mailto:quinn@quinnanderson.ca"><i class="fas fa-envelope" alt="Email Quinn at quinnrhys89@gmail.com"></i>
-						</a>
-					</div>
+		<div class="social-links">
+			<a href="https://twitter.com/?lang=en">
+				<i class="fab fa-twitter" alt="twitter"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/quinn-anderson-249203137/">
+				<i class="fab fa-linkedin-in" alt="LinkedIn"></i>
+			</a>
+			<a href="https://medium.com/@quinnrhys89">
+				<i class="fab fa-medium-m" alt="Medium"></i>
+			</a>
+			<a href="https://github.com/QuinnRhys89">
+				<i class="fab fa-github" alt="GitHub"></i>
+			</a>
+			<a href="mailto:quinn@quinnanderson.ca">
+				<i class="fas fa-envelope" alt="Email Quinn at quinnrhys89@gmail.com"></i>
+			</a>
+		</div>
+	</div>
 
-				</div>
-				
-				<!-- Home Image || Right -->
-				<div class="home right">
-					<img class="barcode" src="../../public/assets/barcode.png" alt="">
-				</div>
-				
-				<a href="#about" class="arrow pulse">
-					<img src="../../public/assets/arrow.png" alt="go to about section">
-				</a>
-			</section>
+	<!-- Home Image || Right -->
+	<div class="home right">
+		<img class="barcode" src="../../public/assets/barcode.png" alt="">
+	</div>
+
+	<a href="#about" class="arrow pulse">
+		<img src="../../public/assets/arrow.png" alt="go to about section">
+	</a>
+</section>
 
 <!-- About Section -->
 			<section class="about-page reveal" id="about">
@@ -103,7 +111,7 @@
 					<img src="../../public/assets/quinn-headshot.jpg" alt="Quinn Anderson">
 				</div>
 
-				<img class="long-barcode" src="../../public/assets/long-barcode.png" alt="">
+				<!-- <img class="long-barcode" src="../../public/assets/long-barcode.png" alt=""> -->
 
 				<div class="about right">
 					<div class="about-text">
@@ -112,17 +120,13 @@
 							<span></span>
 						</div>
 	
-						<p>I'm a <strong>front-end web developer</strong> who is passionate about the intersection of technology, art and equity. With a background in Radio and Television Arts, I’m interested in all of the ways that web development can be harnessed as a medium for social innovation and digital storytelling.</p>
+						<p>I'm a <strong>front-end web developer</strong> who is passionate about the intersection of technology, art and equity.</p>
 						
 						<p>
 							I love solving programmatic tasks and have keen eye for design. I strive to create clean, semantic code and
 							am constantly improving my workflow. 
 						</p>
 	
-						<p>
-							When my hands aren’t coding, they can be found strumming an acoustic guitar, balancing
-							a coffee cup on a packed streetcar or coated in chalk before a rock-climbing adventure at Rock Oasis. 
-						</p>
 	
 						<p>
 							I’m excited to connect with other people
@@ -262,7 +266,6 @@
 								<span>CSS + SASS</span>
 								<span>OpenWeatherMap API</span>
 								<span>News API</span>
-								<span>Paired Programming</span>
 							</p>
 							
 							<div class="portfolio-links">
@@ -276,7 +279,7 @@
 						</div>
 					</div>
 
-				<!-- SpaceX Conversion -->
+				<!-- SpaceX App -->
 				<div class="portfolio-thumb">
 					<div class="desktop">
 						<img src="../../public/assets/spaceX-desktop.jpg" alt="desktop version of SpaceX Launch Tracker app">
@@ -292,7 +295,6 @@
 							<span>CSS + SASS</span>
 							<span>SpaceX API</span>
 							<span>Google Maps API</span>
-							<span>Group Programming</span>
 						</p>
 				
 						<div class="portfolio-links">
@@ -305,8 +307,35 @@
 						</div>
 				
 					</div>
+				</div>
+
+				<!-- Genius PSD Conversion -->
+				<div class="portfolio-thumb ordered">
 				
-					</a>
+					<div class="more-info">
+						<h3>Genius PSD Conversion</h3>
+						<p>A pixel perfect, fully-responsive PSD conversion of an education website. Highlights include a collapsible hamburger menu and subtle animations. 
+						</p>
+				
+						<p class="tools-used">
+							<span>HTML5</span>
+							<span>CSS + SASS</span>
+							<span>jQuery</span>
+						</p>
+				
+						<div class="portfolio-links">
+							<a href="https://quinnrhys89.github.io/project2-final/" target="_blank">
+								<p class="desc">View Live</p>
+							</a>
+							<a href="https://github.com/QuinnRhys89/project2-final" target="_blank">
+								<p class="desc">GitHub</p>
+							</a>
+						</div>
+					</div>
+
+					<div class="desktop">
+						<img src="../../public/assets/genius-desktop.jpg" alt="desktop version of Genius PSD Conversion">
+					</div>
 				</div>
 
 				<a href="#contact" class="arrow">
@@ -328,8 +357,8 @@
 							<label for="email">E-mail :</label>
 							<input id="email" type="text" name="email">
 					
-							<label for="comment">Message :</label>
-							<textarea id="comment" rows="4" name="comment"></textarea>
+							<label for="message">Message :</label>
+							<textarea id="message" rows="4" name="message"></textarea>
 					
 							<input type="submit" value="Send">
 						</div>

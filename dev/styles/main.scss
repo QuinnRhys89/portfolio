@@ -1,7 +1,15 @@
-
-
 $maincolor: #000;
 $secondcolor: grey;
+$hovercolor: lightgrey;
+
+@import 'setup';
+@import 'header';
+@import 'homepage';
+@import 'about';
+@import 'tools';
+@import 'portfolio';
+@import 'contact';
+@import 'responsive';
 
 // Global Styles
 
@@ -28,7 +36,7 @@ a{
 }
 
 a:hover{
-    color: $secondcolor; 
+    color: $hovercolor; 
 }
 
 a:hover span{
@@ -49,11 +57,3 @@ li{
 
 
 
-@import 'setup';
-@import 'header';
-@import 'homepage';
-@import 'about';
-@import 'tools';
-@import 'portfolio';
-@import 'contact';
-@import 'responsive';

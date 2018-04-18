@@ -1,4 +1,4 @@
-// Navigation
+/// Navigation
 
 main{
 	display: flex;
@@ -55,7 +55,8 @@ section{
 	transform:translateY(-50%);
 	margin-left: 0;
 	margin-right: 2%;
-	text-align: center;
+    text-align: center;
+    z-index: 10;
 }
 
 .jump-bar li{
