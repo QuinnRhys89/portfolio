@@ -1,13 +1,3 @@
-//  Scroll Reveal Animation 
-
-window.sr = ScrollReveal({ reset: true });
-sr.reveal('.reveal', { duration: 1200 });
-
-// Smooth Scroll
-
-$('a').smoothScroll({
-    offset: 0
-});
 
 // Active link highlight
 const scrollLink = $('.scroll');
@@ -27,4 +17,19 @@ $(window).scroll(function () {
         }
     })
 });
-   
+
+  //  Scroll Reveal Animation 
+
+window.sr = ScrollReveal({ reset: true });
+sr.reveal('.reveal', { duration: 1200 });
+
+// Smooth Scroll
+
+$('a').smoothScroll({
+    offset: 0
+});
+
+// removing reveal class
+$(window).on("resize", function() {
+  $(".reveal").removeClass("reveal", $(window).width() < 768);
+});

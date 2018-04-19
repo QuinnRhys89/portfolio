@@ -1,16 +1,5 @@
 'use strict';
 
-//  Scroll Reveal Animation 
-
-window.sr = ScrollReveal({ reset: true });
-sr.reveal('.reveal', { duration: 1200 });
-
-// Smooth Scroll
-
-$('a').smoothScroll({
-    offset: 0
-});
-
 // Active link highlight
 var scrollLink = $('.scroll');
 
@@ -28,4 +17,20 @@ $(window).scroll(function () {
             $(this).parent().siblings().removeClass('active pulse');
         }
     });
+});
+
+//  Scroll Reveal Animation 
+
+window.sr = ScrollReveal({ reset: true });
+sr.reveal('.reveal', { duration: 1200 });
+
+// Smooth Scroll
+
+$('a').smoothScroll({
+    offset: 0
+});
+
+// removing reveal class
+$(window).on("resize", function () {
+    $(".reveal").removeClass("reveal", $(window).width() < 768);
 });
