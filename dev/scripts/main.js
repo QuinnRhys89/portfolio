@@ -18,7 +18,7 @@ $(window).scroll(function () {
     })
 });
 
-  //  Scroll Reveal Animation 
+//  Scroll Reveal Animation 
 
 window.sr = ScrollReveal({ reset: true });
 sr.reveal('.reveal', { duration: 1200 });
@@ -29,7 +29,11 @@ $('a').smoothScroll({
     offset: 0
 });
 
+
 // removing reveal class
-$(window).on("resize", function() {
-  $(".reveal").removeClass("reveal", $(window).width() < 768);
+$(window).load(function() {
+    let viewportWidth = $(window).width();
+    if (viewportWidth < 600) {
+        $(window).removeClass("reveal");
+    }
 });

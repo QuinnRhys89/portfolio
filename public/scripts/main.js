@@ -31,6 +31,9 @@ $('a').smoothScroll({
 });
 
 // removing reveal class
-$(window).on("resize", function () {
-    $(".reveal").removeClass("reveal", $(window).width() < 768);
+$(window).load(function () {
+    var viewportWidth = $(window).width();
+    if (viewportWidth < 600) {
+        $(window).removeClass("reveal");
+    }
 });
