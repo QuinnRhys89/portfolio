@@ -24,6 +24,20 @@
 .home.left{
 	border: 1px solid lightgrey;
 	margin-right: 35px;
+	h1{
+    	background: -webkit-linear-gradient(125deg, rgb(243, 149, 73), #d6ae3f,  rgb(131, 185, 230), #6a576b, #b5afb0);
+        background: -o-linear-gradient(125deg,  rgb(243, 149, 73), #d6ae3f, rgb(131, 185, 230), #6a576b,#b5afb0);
+        background: linear-gradient(125deg, rgb(243, 149, 73), #d6ae3f,  rgb(131, 185, 230), #6a576b, #b5afb0);
+        background-size: 600%;
+        -webkit-animation: gradient 17s ease infinite;
+        -moz-animation: gradient 17s ease infinite;
+        animation: gradient 17s ease infinite;
+    	-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+		font-size: 2.5rem;
+    	font-weight: 600;
+    	text-align: center;
+	}
 }
 
 
@@ -35,9 +49,47 @@
 	justify-content: center;
 	align-items: center;
 	margin-left: 35px;
-	.barcode{
-		height: 120px;
+	span{
+		background: rgba(0, 0, 0, 0.2);
+		padding: 10px 20px;
 	}
+
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 32%
+    }
+    50% {
+        background-position: 100% 69%
+    }
+    100% {
+        background-position: 0% 32%
+    }
+}
+
+@-moz-keyframes gradient {
+    0% {
+        background-position: 0% 32%
+    }
+    50% {
+        background-position: 100% 69%
+    }
+    100% {
+        background-position: 0% 32%
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 32%
+    }
+    50% {
+        background-position: 100% 69%
+    }
+    100% {
+        background-position: 0% 32%
+    }
 }
 
 .main-title{
